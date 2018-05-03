@@ -13,13 +13,13 @@ body {
 
 h1 {
 /*    font-size: 2.0rem; */
-    font-size: 1rem;
-    color: blue;
+    font-size: 2.0rem;
+    color: white;
 }
 
 h2 {
 /*    font-size: 1.5rem; */
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -44,5 +44,5 @@ header img {
 
 footer {
 /*    font-size: 0.5rem; */
-    font-size: 1rem;
+    font-size: 0.5rem;
  }
