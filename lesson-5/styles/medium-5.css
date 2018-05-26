@@ -2,13 +2,27 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
+    nav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-    nav li { float: left; }
+    nav li { 
+        float: left;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
     nav a {
         display: block;
         padding: 8px;
         background-color: #dddddd;
     }
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
-
+    .forecast {
+    display: block;
+}
   }

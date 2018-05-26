@@ -9,18 +9,24 @@ body {
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    float: left;
 }
 
-header {position: absolute}
+header {
+    width: 100%;
+}
 header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav {
+}
 nav button {}
 nav ul {}
 nav ul li {}
-nav ul li a {}
+nav ul li a {
+    text-decoration: none;
+}
 nav ul li.active a {}
 nav ul li a:hover {}
 
@@ -29,4 +35,15 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
-footer {}
+.weather-summary {
+}
+
+.forecast {
+    display: none;
+}
+footer {
+    position:static;
+    bottom: 0;
+    width: 100%
+    float: none;
+}
