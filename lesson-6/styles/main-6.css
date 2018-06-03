@@ -1,0 +1,99 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    float: left;
+    margin: 20px 20px 20px 20px;
+    
+}
+
+header {
+    width: 100%;
+}
+header h1 {}
+header img {
+    width: 100%;
+}
+header img {}
+header .subheading {}
+
+.hamburger {
+    display: block;position: absolute;top: 2.0rem;right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.navigation li {display: none;
+}
+
+.navigation.responsive {position: relative;}
+.navigation.responsive li {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation.responsive li a:hover {background-color:#ddd;}
+    
+
+nav {
+    list-style: none;
+    padding-left: 0;
+}
+nav button {}
+nav ul {}
+/* nav ul li {
+    display: none;
+}*/
+
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+nav.responsive {
+    position: relative;
+}
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+article {
+    font-family:serif;
+}
+article img {
+    width: 100%;
+}
+
+.weather-summary {
+}
+
+.forecast {
+    display: none;
+}
+footer {
+    font-size: .8em;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    float: none;
+}
