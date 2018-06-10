@@ -12,17 +12,19 @@ body {
   min-height: 100vh;
 }
 
-/* header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+/* header, nav, main, footer { 
+    max-width: 800px;  Declare the maximum width and other main element rules to limit the stretch on larger/wider views 
 }*/
 
 header {
   grid-column: span 3;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
-  font-size: 1.4em;
-  background-color: #369;
-  color: white;
+    font-family:Oxygen;
+    font-size: 1.2em;
+    margin: .2em;
+  background-color: white;
+  color: black;
 }
 
 header img {
@@ -41,7 +43,8 @@ nav {
 }
 
 nav button {}
-nav ul {}
+nav ul {
+}
 /* nav ul li {
     display: none;
 }*/
