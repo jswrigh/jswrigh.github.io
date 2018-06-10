@@ -12,9 +12,9 @@ body {
   min-height: 100vh;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+/* header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
     max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-}
+}*/
 
 header {
   grid-column: span 3;
@@ -33,7 +33,32 @@ header img {
 .hamburger {
     display: block;position: absolute;top: 2.0rem;right: 1.25rem;
 }
+*/
 
+nav {
+/*  background-color: skyblue; */
+  padding: 0px;
+}
+
+nav button {}
+nav ul {}
+/* nav ul li {
+    display: none;
+}*/
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/*
+nav ul li.active a {}
+nav ul li a:hover {}
+
+nav.responsive {
+    position: relative;
+}
+*/
+/*
 .navigation {
     list-style: none;
     padding-left: 0;
@@ -58,28 +83,7 @@ header img {
 .navigation.responsive li a:hover {background-color:#ddd;}
     
 */
-nav {
-  background-color: #f90;
-  padding: 20px;
-}
- 
-nav button {}
-nav ul {}
-/* nav ul li {
-    display: none;
-}*/
 
-nav ul li a {
-    text-decoration: none;
-}
-/*
-nav ul li.active a {}
-nav ul li a:hover {}
-
-nav.responsive {
-    position: relative;
-}
-*/
 
 main {
   flex: 1;
@@ -100,7 +104,7 @@ article {
     font-family:serif;
 }
 article img {
-/*    width: 100%; */
+     width: 100%;
 }
 
 .weather-summary {
@@ -111,7 +115,7 @@ article img {
 }
 footer {
   grid-column: span 3;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-size: 1.4em;
   background-color: #690;
