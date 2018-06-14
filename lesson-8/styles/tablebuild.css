@@ -11,10 +11,6 @@ th, tfoot {
     color: black;
     margin: .3rem;
     padding: 10px 10px 10px 10px;
-}
-tfoot tr {
-	background-color: #628ca6;
-	font-size: .75em;
 }	
 table#myTable tr:nth-child(even) {
     background-color: #e7ffed;
@@ -26,4 +22,8 @@ table#myTable tr:nth-child(odd) {
 }
 table#myTable tr:nth-child(6) {
     font-style: italic;
+}
+tfoot tr {
+	background-color: #628ca6;
+	font-size: .75em;
 }
