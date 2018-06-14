@@ -2,9 +2,10 @@ body {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
-table#myTable {
+table {
     width: 100%; 
     background-color: #7fb9c2;
+	box-shadow: 10px 10px 10px 2px #628ca6;
 }
 th, tfoot {
     background-color: #628ca6;
@@ -12,25 +13,32 @@ th, tfoot {
 	text-style: bold;
     padding: 10px 10px 10px 10px;
 }	
-table#myTable tr:nth-child(even) {
+table tr td {
+	padding: 10px 10px 10px 10px;
+}
+table tr:nth-child(even) {
     background-color: #e7f0ed;
     text-align: center;
 }
-table#myTable tr:nth-child(odd) {
+table tr:nth-child(odd) {
     background-color: #e7ffed;
     text-align: center;
 }
-table#myTable tr:nth-child(6) {
+table tr:nth-child(6) {
     font-style: italic;
 }
-table#myTable thead th:nth-child(1) {
+table thead th:nth-child(1) {
 	color: black;
 	background-color: #7fb9c2;
 	font-size: 2em;
 }
-table#myTable tfoot tr:nth-child(1) {
+table tfoot tr:nth-child(1) {
 	color: black;
 	text-style: normal;
 	background-color: #7fb9c2;
 	font-size: .75em;
+}
+.column3 {
+	background-color: #628ca6;
+	color: white;
 }
