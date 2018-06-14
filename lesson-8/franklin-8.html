@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather</title>
+    <meta name="description" content="Weather in Franklin">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+</head>
+    
+<body>
+    <header>
+        <button class="hamburger"
+                onclick="toggleHam()">&#9776;
+        </button>
+        <h1>Hometown Weather</h1>
+        <div class="subheading">"Simply Weather from Home"</div>
+		<nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>		
+        </nav>
+		    <picture>
+            <source srcset="images/franklin-400.jpg" media="(max-width: 400px)">
+            <source srcset="images/franklin-800.jpg" media="(max-width: 800px)">
+            <img src="images/franklin-1200.jpg" alt="Weather">
+        </picture>
+
+    </header>   
+    
+  <main>
+    <h2>Franklin</h2>
+    <figure>
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High: 90&deg;</p>  
+        <p>Low: 66&deg;</p>  
+      </div>
+      <div class="current">
+        Sunny
+        <picture>
+            <img src="images/sun.png" width="150" height="150" alt="sun">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Temperature: 20</p>
+        <p>Precipitation: 0 in</p>  
+        <p>Wind Speed: 35 mph</p>
+        <p>Wind Chill: 
+        <span id="windchill"></span></p>
+      </div>
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+        <picture>
+            <source srcset="images/sun400.jpg" media="(max-width: 400px)">
+            <source srcset="images/sun800.jpg" media="(max-width: 800px)">
+            <img src="images/sun1200.jpg" alt="Hot sun">
+        </picture>
+      <p class="town-article">
+          You probably knew it was warmer than normal yesterday but may not have recognized 2:43pm as a special moment in Franklin history. That's when the thermometer moved from 89.9&deg; to 90.0&deg;, setting a record for the warmest May25th ever.
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      <h6>Hometown Weather</h6>
+      555-555-1234
+      123 Main St. Happy, UT 12345
+    </section>
+    <section class="footer-bar">
+        <h6>&copy;2018 | All Rights Reserved | Hometown Weather | <span id="currentdate"></span></h6>
+    </section>
+  </footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+</body>
+</html>
