@@ -6,13 +6,13 @@ table#myTable {
     width: 100%; 
     background-color: #7fb9c2;
 }
-th,tf {
+th, tfoot {
     background-color: #7fb9c2;
     color: black;
     margin: .3rem;
     padding: 10px 10px 10px 10px;
 }
-tf {
+tfoot {
 	font-size: 10px;
 }	
 table#myTable tr:nth-child(even) {
@@ -23,6 +23,6 @@ table#myTable tr:nth-child(odd) {
     background-color: #e7f0ed;
     text-align: center;
 }
-table#myTable tr:nth-child(5) {
+table#myTable tr:nth-child(6) {
     font-style: italic;
 }
