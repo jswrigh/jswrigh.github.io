@@ -12,8 +12,9 @@ th, tfoot {
     margin: .3rem;
     padding: 10px 10px 10px 10px;
 }
-tfoot {
-	font-size: .5em;
+tfoot tr {
+	background-color: #628ca6;
+	font-size: .75em;
 }	
 table#myTable tr:nth-child(even) {
     background-color: #e7ffed;
