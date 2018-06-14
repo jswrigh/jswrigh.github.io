@@ -7,7 +7,7 @@ table#myTable {
     background-color: #7fb9c2;
 }
 th, tfoot {
-    background-color: #628ca6;
+    background-color: #7fb9c2;
     color: black;
     margin: .3rem;
     padding: 10px 10px 10px 10px;
@@ -23,7 +23,11 @@ table#myTable tr:nth-child(odd) {
 table#myTable tr:nth-child(6) {
     font-style: italic;
 }
+table#myTable thead th:nth-child(1) {
+	background-color: #7fb9c2;
+	font-size: .75em;
+}
 table#myTable tfoot tr:nth-child(1) {
-	background-color: #628ca6;
+	background-color: #7fb9c2;
 	font-size: .75em;
 }
