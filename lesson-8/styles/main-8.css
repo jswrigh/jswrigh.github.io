@@ -1,0 +1,125 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+body {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header, nav, main, footer { 
+    max-width: 800px;  Declare the maximum width and other main element rules to limit the stretch on larger/wider views 
+}*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	text-align: center;
+	font-family:Oxygen;
+	font-size: 1.2em;
+	margin: .2em;
+	background-color: white;
+	color: black;
+}
+
+header img {
+    width: 100%;
+}
+
+
+header button.hamburger {
+    text-align:right;
+}
+
+nav {
+/*  background-color: skyblue; */
+  padding: 0px;
+}
+
+nav button {}
+nav ul {
+    list-style-type: none;
+
+}
+ nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+nav ul li.active a {}
+nav ul li a:hover {}
+
+nav.responsive {
+    position: flex;
+}
+/*
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.navigation li {display: none;
+}
+*/
+.navigation.responsive {position: flex;}
+.navigation.responsive li {
+    background-color: #eee;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.navigation.responsive li a:hover {background-color:#ddd;}
+    
+*/
+
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+main h2 {}
+main figure { display:flex;}
+main figure img { }
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+article {
+    font-family:serif;
+}
+article img {
+     width: 100%;
+}
+
+.weather-summary {
+}
+
+.forecast {
+    display: none;
+}
+footer {
+  grid-column: span 3;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+}
