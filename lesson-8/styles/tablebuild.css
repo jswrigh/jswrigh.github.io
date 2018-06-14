@@ -23,7 +23,7 @@ table#myTable tr:nth-child(odd) {
 table#myTable tr:nth-child(6) {
     font-style: italic;
 }
-table#myTable tfoot tr {
+table#myTable tfoot tr:nth-child(1) {
 	background-color: #628ca6;
 	font-size: .75em;
 }
