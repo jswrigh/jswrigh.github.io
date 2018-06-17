@@ -62,8 +62,8 @@ nav ul li.active a {}
 nav ul li a:hover {}
 
 nav.responsive {
-    position: flex;
 }
+
 /*
 .navigation {
     list-style: none;
@@ -72,7 +72,7 @@ nav.responsive {
 .navigation li {display: none;
 }
 */
-.navigation.responsive {position: flex;}
+.navigation.responsive {}
 .navigation.responsive li {
     background-color: #eee;
     width: 100%;
@@ -84,9 +84,9 @@ nav.responsive {
     text-align: center;
     text-decoration: none;
 }
-.navigation.responsive li a:hover {background-color:#ddd;}
+.navigation.responsive li a:hover {background-color:#ddd;
+}
     
-*/
 
 
 main {
