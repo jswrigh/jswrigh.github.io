@@ -1,0 +1,42 @@
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .across3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .across2 {
+    grid-column: span 2;
+  }
+  .across1 {
+    grid-column: span 3;
+  }
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Oxygen', sans-serif;
+}
+
+header {
+ padding: 10px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
