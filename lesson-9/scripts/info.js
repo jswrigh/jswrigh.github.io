@@ -1,9 +1,12 @@
-let weatherRequest = new XMLHttpRequest();
-let apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=4156210&units=imperial&APPID=123e236852641b9b3bfd755ffa553566";
-weatherRequest.open("GET",apiURL,true);
-weatherRequest.send();
-weatherRequest.onload =  function () {
- let weatherData = JSON.parse(weatherRequest.responseText);
- console.log(weatherData);
- document.getElementById("franklin-population").innerHTML = weatherData.list[0].main.temp;
+let infoRequest = new XMLHttpRequest();
+let jsonURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+infoRequest.open("GET",jsonURL,true);
+infoRequest.send();
+infoRequest.onload =  function () {
+let infoData = JSON.parse(infoRequest.responseText);
+console.log(infoData);
+document.getElementById("franklin-motto").innerHTML = infoData.towns[0].motto;
+document.getElementById("franklin-founded").innerHTML = infoData.towns[0].yearFounded;
+document.getElementById("franklin-population").innerHTML = infoData.towns[0].currentPopulation;
+document.getElementById("franklin-rainfall").innerHTML = infoData.towns[0].averageRainfall;
 }

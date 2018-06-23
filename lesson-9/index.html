@@ -3,7 +3,7 @@
 <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franklin Weather</title>
+    <title>Local Weather</title>
     <meta name="description" content="Weather Home">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
@@ -42,78 +42,70 @@
     <h2>Area Information</h2>
     <section class="franklin-info">
         <h3>Franklin</h3>
-        Motto: <div id="franklin-motto"</div>
-        Year Founded: <div id="franklin-founded"</div>
-        Population: <div id="franklin-population"</div>
-        Annual Rainfall: <div id="franklin-rainfall"</div>
+        <p>Motto: <span id="franklin-motto"></span></p>
+        <p>Year Founded: <span id="franklin-founded"></span></p>
+        <p>Population: <span id="franklin-population"></span></p>
+        <p>Annual Rainfall: <span id="franklin-rainfall"></span>"</p>
     </section>
     <section class="weather-summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High: 90&deg;</p>  
-        <p>Low: 66&deg;</p>  
-      </div>
+      <h3>Current Weather</h3>    
       <div class="current">
-        Sunny
+        <p><span id="franklin-current"></span></p>
         <picture>
-            <img src="images/sun.png" width="150" height="150" alt="sun">
+            <img id="franklin-icon" src="#" width="150" height="150" alt="current">
         </picture>
       </div>   
       <div class="conditions">
-        <p>Temperature: 20</p>
-        <p>Precipitation: 0 in</p>  
-        <p>Wind Speed: 35 mph</p>
-        <p>Wind Chill: 
-        <span id="windchill"></span></p>
+        <p>Temperature: <span id="franklin-temp"></span>&deg</p>
+        <p>Low: <span id="franklin-low"></span>&deg</p>  
+        <p>High: <span id="franklin-high"></span>&deg</p>  
+        <p>Wind Speed: <span id="franklin-wind"></span> mph</p>
       </div>
+    </section>  
+    <section class="greenville-info">
+        <h3>Greenville</h3>
+        <p>Motto: <span id="greenville-motto"></span></p>
+        <p>Year Founded: <span id="greenville-founded"></span></p>
+        <p>Population: <span id="greenville-population"></span></p>
+        <p>Annual Rainfall: <span id="greenville-rainfall"></span>"</p>
     </section>
-        
-    <section class="forecast">
-      <h3>Ten Day Forecast</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-	</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-	</tbody>
-      </table>
-    </section>
-      
-    <article>
-      <h3>Franklin Breaks Record</h3>	
+    <section class="weather-summary">
+      <h3>Current Weather</h3>    
+      <div class="current">
+        <p><span id="greenville-current"></span></p>
         <picture>
-            <source srcset="images/sun400.jpg" media="(max-width: 400px)">
-            <source srcset="images/sun800.jpg" media="(max-width: 800px)">
-            <img src="images/sun1200.jpg" alt="Hot sun">
+            <img id="greenville-icon" src="#" width="150" height="150" alt="current">
         </picture>
-      <p class="town-article">
-          You probably knew it was warmer than normal yesterday but may not have recognized 2:43pm as a special moment in Franklin history. That's when the thermometer moved from 89.9&deg; to 90.0&deg;, setting a record for the warmest May25th ever.
-      </p>
-    </article>		  
-  
+      </div>   
+      <div class="conditions">
+        <p>Temperature: <span id="greenville-temp"></span>&deg</p>
+        <p>Low: <span id="greenville-low"></span>&deg</p>  
+        <p>High: <span id="greenville-high"></span>&deg</p>  
+        <p>Wind Speed: <span id="greenville-wind"></span> mph</p>
+      </div>
+    </section>  
+    <section class="springfield-info">
+        <h3>Springfield</h3>
+        <p>Motto: <span id="springfield-motto"></span></p>
+        <p>Year Founded: <span id="springfield-founded"></span></p>
+        <p>Population: <span id="springfield-population"></span></p>
+        <p>Annual Rainfall: <span id="springfield-rainfall"></span>"</p>
+    </section>
+    <section class="weather-summary">
+      <h3>Current Weather</h3>    
+      <div class="current">
+        <p><span id="springfield-current"></span></p>
+        <picture>
+            <img id="springfield-icon" src="#" width="150" height="150" alt="current">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Temperature: <span id="springfield-temp"></span>&deg</p>
+        <p>Low: <span id="springfield-low"></span>&deg</p>  
+        <p>High: <span id="springfield-high"></span>&deg</p>  
+        <p>Wind Speed: <span id="springfield-wind"></span> mph</p>
+      </div>
+    </section>  
   </main>
     
   <footer>
@@ -128,6 +120,8 @@
   </footer>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
+<!--/*<script src="scripts/windchill.js"></script>*/-->
+<script src="scripts/weather.js"></script>
+<script src="scripts/info.js"></script>
 </body>
 </html>
