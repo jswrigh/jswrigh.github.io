@@ -11,5 +11,5 @@ weatherRequest.onload =  function () {
     document.getElementById("franklin-low").innerHTML = franklinWeather["low-temp"];
     document.getElementById("franklin-high").innerHTML = franklinWeather["high-temp"];
     document.getElementById("franklin-wind").innerHTML = franklinWeather["wind-speed"];
-    document.getElementById("franklin-icon").src = 'http://openweathermap.org/img/w/' + franklinWeather["weather-icon"]+'.png';
+    document.getElementById("franklin-icon").src = 'https://openweathermap.org/img/w/' + franklinWeather["weather-icon"]+'.png';
 }
