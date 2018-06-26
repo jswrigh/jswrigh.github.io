@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather</title>
+    <meta name="description" content="Weather in Franklin">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+</head>
+    
+<body>
+    <header>
+        <button class="hamburger"
+                onclick="toggleHam()">&#9776;
+        </button>
+        <h1>Hometown Weather</h1>
+        <div class="subheading">"Simply Weather from Home"</div>
+		<nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin-9.html">Franklin</a></li>
+                <li><a href="greenville-9.html">Greenville</a></li>
+                <li><a href="springfield-9.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>		
+        </nav>
+		    <picture>
+            <source srcset="images/franklin-400.jpg" media="(max-width: 400px)">
+            <source srcset="images/franklin-800.jpg" media="(max-width: 800px)">
+            <img src="images/franklin-1200.jpg" alt="Weather">
+        </picture>
+
+    </header>   
+    
+  <main>
+    <h2>Franklin</h2>
+    <figure>
+    </figure>
+    <section class="weather-summary">
+      <h3>Current Weather</h3>    
+      <div class="current">
+        <p><span id="franklin-current"></span></p>
+        <picture>
+            <img id="franklin-icon" src="#" width="150" height="150" alt="current">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Temperature: <span id="franklin-temp"></span>&deg</p>
+        <p>Low: <span id="franklin-low"></span>&deg</p>  
+        <p>High: <span id="franklin-high"></span>&deg</p>  
+        <p>Wind Speed: <span id="franklin-wind"></span> mph</p>
+      </div>
+    </section>  
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+        <picture>
+            <source srcset="images/sun400.jpg" media="(max-width: 400px)">
+            <source srcset="images/sun800.jpg" media="(max-width: 800px)">
+            <img src="images/sun1200.jpg" alt="Hot sun">
+        </picture>
+      <p class="town-article">
+          You probably knew it was warmer than normal yesterday but may not have recognized 2:43pm as a special moment in Franklin history. That's when the thermometer moved from 89.9&deg; to 90.0&deg;, setting a record for the warmest May25th ever.
+      </p>
+    </article>		    
+  </main>
+    
+  <footer>
+    <section class="attribution">
+        <h6>Weather data provided by <a  href="http://www.openweathermap.org">OpenWeatherMap.org</a></h6>
+    </section>
+
+    <section class="contact">
+      <h6>Hometown Weather</h6>
+      555-555-1234
+      123 Main St. Happy, UT 12345
+    </section>
+    <section class="footer-bar">
+        <h6>&copy;2018 | All Rights Reserved | Hometown Weather | <span id="currentdate"></span></h6>
+    </section>
+  </footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>
