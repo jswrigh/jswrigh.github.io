@@ -39,11 +39,10 @@ article img {
 }
 
 .city-cards > section {
-    width: 1fr;
+    width: 30%;
     margin: 10px;
     padding: 10px;
     text-align: left;
-    line-height: auto;
     font-size: 20px;
 }
 
