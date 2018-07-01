@@ -1,128 +1,88 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Greenville Weather</title>
-    <meta name="description" content="Weather in Greenville">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main-9.css">
-    <link rel="stylesheet" href="styles/medium-9.css">
-    <link rel="stylesheet" href="styles/large-9.css">
+<head includefile="head.html">
 </head>
     
 <body>
     <header>
-        <button class="hamburger"
-                onclick="toggleHam()">&#9776;
-        </button>
+            <nav class="navbar">
+            <span id="navbar-toggle">
+                &#9776
+            </span>
+            <a href="#" id="logo"><img src="images/Weather-Partly-Cloudy-Rain-icon.png"/></a>
+            <ul id="main-nav">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="franklin.html" class="nav-links">Franklin</a>
+                </li>
+                <li>
+                    <a href="greenville.html" class="nav-links">Greenville</a>
+                </li>
+                <li>
+                    <a href="springfield.html" class="nav-links">Springfield</a>
+                </li>
+                <li>
+                    <a href="stormcenter.html" class="nav-links">Storm Center</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="nav-links">Gallery</a>
+                </li>
+            </ul>
+        </nav>
         <h1>Hometown Weather</h1>
         <div class="subheading">"Simply Weather from Home"</div>
-		<nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="franklin-9.html">Franklin</a></li>
-                <li><a href="greenville-9.html">Greenville</a></li>
-                <li><a href="springfield-9.html">Springfield</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-9.html">Gallery</a></li>
-            </ul>		
-        </nav>
-		    <picture>
-            <source srcset="images/franklin-400.jpg" media="(max-width: 400px)">
-            <source srcset="images/franklin-800.jpg" media="(max-width: 800px)">
-            <img src="images/franklin-1200.jpg" alt="Weather">
+        <picture>
+            <source srcset="images/greenville-600.jpg" media="(max-width: 400px)">
+            <source srcset="images/greenville-800.jpg" media="(max-width: 800px)">
+            <img src="images/greenville-1200.jpg" alt="Weather">
         </picture>
 
-    </header>   
-    
+    </header>    
   <main>
     <h2>Greenville</h2>
-    <figure>
-    </figure>
     <section class="weather-summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High: 90&deg;</p>  
-        <p>Low: 66&deg;</p>  
-      </div>
+      <h3>Current Weather</h3>    
       <div class="current">
-        Sunny
+        <p><span id="greenville-current"></span></p>
         <picture>
-            <img src="images/sun.png" width="150" height="150" alt="sun">
+            <img id="greenville-icon" src="#" width="150" height="150" alt="current">
         </picture>
       </div>   
       <div class="conditions">
-        <p>Temperature: 20</p>
-        <p>Precipitation: 0 in</p>  
-        <p>Wind Speed: 35 mph</p>
-        <p>Wind Chill: 
-        <span id="windchill"></span></p>
+        <p>Temperature: <span id="greenville-temp"></span>&deg</p>
+        <p>Low: <span id="greenville-low"></span>&deg</p>  
+        <p>High: <span id="greenville-high"></span>&deg</p>  
+        <p>Wind Speed: <span id="greenville-wind"></span> mph</p>
       </div>
     </section>
-        
-    <section class="forecast">
-      <h3>Ten Day Forecast</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-	</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-	</tbody>
-      </table>
-    </section>
       
+    <h3>Rain Hits Greenville...Again!</h3>	
     <article>
-      <h3>Greenville Breaks Record</h3>	
         <picture>
-            <source srcset="images/sun400.jpg" media="(max-width: 400px)">
-            <source srcset="images/sun800.jpg" media="(max-width: 800px)">
-            <img src="images/sun1200.jpg" alt="Hot sun">
+            <source srcset="images/rained-out-600.jpg" media="(max-width: 600px)">
+            <source srcset="images/rained-out-800.jpg" media="(max-width: 800px)">
+            <img src=images/rained-out-1200.jpg alt="Wet dog">
         </picture>
       <p class="town-article">
-          You probably knew it was warmer than normal yesterday but may not have recognized 2:43pm as a special moment in Franklin history. That's when the thermometer moved from 89.9&deg; to 90.0&deg;, setting a record for the warmest May25th ever.
+          This little guy is definitely not happy that the rain ruined his romp in the park! <a includefile="common_text.html"></a>
       </p>
-    </article>		  
-  
+    </article>		    
   </main>
     
-  <footer>
-    <section class="contact">
-      <h6>Hometown Weather</h6>
-      555-555-1234
-      123 Main St. Happy, UT 12345
-    </section>
+    <footer includefile="footer.html">
+    </footer>
     <section class="footer-bar">
         <h6>&copy;2018 | All Rights Reserved | Hometown Weather | <span id="currentdate"></span></h6>
     </section>
-  </footer>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
+
+    <script src="scripts/include.js"></script>
+    <script src="scripts/newnav.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <!--/*<script src="scripts/windchill.js"></script>*/-->
+    <!--<script src="scripts/weather.js"></script>-->
+    <script src="scripts/greenville_weather.js"></script>
 </body>
 </html>

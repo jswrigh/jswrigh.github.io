@@ -1,44 +1,56 @@
-@media only screen and (min-width: 37.5em) {
-
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
- 
-    .container {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-
-  }
-   
-    .hamburger { display: none;	}
-	.navigation {
-        overflow: hidden;
-        text-align: center;
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
     }
-	.navigation li {
-        margin-left: .25rem;
+    #main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
-	.navigation a {
-        color: #449;
-        padding: .3rem;
-        background: white;
-        text-align: center;
-        text-decoration: none;
-    }
-	.navigation a:hover {
-        color: #fff;
-        background: rgba(76, 100, 180, 0.7);
-    }
-    nav ul li { 
-        list-style-type: none;
+    #main-nav li {
         margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: inline-block;
     }
-    nav a {
-        padding: 8px;
-        background-color: #dddddd;
+    .nav-links {
+        margin-left: 40px;
     }
-    .forecast {
+    #logo {
+        margin-top: 0;
     }
-  }
+    #navbar-toggle {
+        display: none;
+    }
+    .weather-summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    article {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .town-article {
+        margin-left: 10px;
+    }
+    .gallery {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    footer {
+      grid-column: span 3;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.4em;
+      background-color: #690;
+      color: black;
+    }
+}

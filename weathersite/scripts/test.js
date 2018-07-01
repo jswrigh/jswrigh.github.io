@@ -1,1 +1,0 @@
-document.getElementById("franklin-motto").innerHTML = "XXXXX";
