@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="toggle.css">
     <link rel="stylesheet" href="medium.css">
-</head>
-    
-<body>
-<script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
+$(document).ready(function() {    
     $(".menu-toggle").click(function() {
+        alert("you clicked!");
         $('ul').toggleClass('opening');
         $(this).toggleClass('open');
     })
+})
 </script>
-
+</head>
+    
+<body>
 <nav class="site-nav">
 
   <div class="menu-toggle">
@@ -30,8 +32,7 @@
     <li><a href="#!">Latest News</a></li>
     <li><a href="#!">About us</a></li>
     <li><a href="#!">Download Plugin</a></li>
-    <li><a href="#!">Contact us</a></li>
-    
+    <li><a href="#!">Contact us</a></li>    
   </ul>
 </nav>
 </body>
