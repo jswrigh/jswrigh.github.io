@@ -14,28 +14,9 @@
 </head>
     
 <body>
-    <header>
-        <button class="hamburger"
-                onclick="toggleHam()">&#9776;
-        </button>
-        <h1>Hometown Weather</h1>
-        <div class="subheading">"Simply Weather from Home"</div>
-		<nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="franklin-9.html">Franklin</a></li>
-                <li><a href="greenville-9.html">Greenville</a></li>
-                <li><a href="springfield-9.html">Springfield</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-8.html">Gallery</a></li>
-            </ul>		
-        </nav>
-		    <picture>
-            <source srcset="images/franklin-400.jpg" media="(max-width: 400px)">
-            <source srcset="images/franklin-800.jpg" media="(max-width: 800px)">
-            <img src="images/franklin-1200.jpg" alt="Weather">
-        </picture>
-
+    <div class="Navbar" includefile="nav.html">
+    </div>
+    <header includefile="header.html">
     </header>   
     
   <main>
@@ -84,6 +65,7 @@
         <h6>&copy;2018 | All Rights Reserved | Hometown Weather | <span id="currentdate"></span></h6>
     </section>
   </footer>
+<script src="scripts/include.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/weather2.js"></script>
