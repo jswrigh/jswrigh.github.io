@@ -1,0 +1,41 @@
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+nav ul.opening {
+  display: block;
+  height: 30px;
+}
+
+nav li { border-bottom: 1px solid #f6f4e2; }
+
+nav li:last-child { border-bottom: none; }
+
+nav a {
+  color: #EBEBD3;
+  background: #e7a119;
+  display: block;
+  padding: 1.5em 4em 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus { background: #E4B363; }
+
+.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}

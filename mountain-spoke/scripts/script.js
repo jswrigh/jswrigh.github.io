@@ -1,4 +1,4 @@
-$alert("I am here");
+alert("I am here");
 $('.menu-toggle').click(function() {
     alert( "Handler for .click() called." );
     $('ul').toggleClass('opening');
