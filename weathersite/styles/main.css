@@ -1,194 +1,103 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
-    font-size: 16px;
     font-family: 'Oxygen', sans-serif;
     font-family: 'IBM Plex Serif', serif;
-    margin-left:20px;
+    margin-left: 20px;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+h1, h2 {
+    font-family: 'Oxygen';
 }
-
-/* header, nav, main, footer { 
-    max-width: 800px;  Declare the maximum width and other main element rules to limit the stretch on larger/wider views 
-}*/
-
 header {
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	text-align: center;
-	font-family:Oxygen;
-	font-size: 1.2em;
-	margin: .2em;
-	background-color: white;
-	color: black;
+    text-align: center;
 }
 
 header img {
     width: 100%;
 }
 
-
-header button.hamburger {
-    text-align:right;
-}
-
 nav {
-/*  background-color: skyblue; */
-  padding: 0px;
+    text-align: left;
 }
-
-nav button {}
-nav ul {
-    list-style-type: none;
-
-}
- nav ul li {
-    display: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-
-nav ul li.active a {}
-nav ul li a:hover {}
-
-nav.responsive {
-    position: flex;
-}
-/*
-.navigation {
-    list-style: none;
-    padding-left: 0;
-}
-.navigation li {display: none;
-}
-*/
-.navigation.responsive {position: flex;}
-.navigation.responsive li {
-    background-color: #eee;
-    width: 100%;
-    margin: 2px 0;
-    border: 1px solid #ddd;
-}
-.navigation.responsive li a {
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-}
-.navigation.responsive li a:hover {background-color:#ddd;}
-    
-*/
-
-
 main {
-    display:flex;
-    margin-left:20px;
-  flex: 1;
-  padding: 20px;
+    width: 100%;
+    text-align: left;
 }
-
-main h2 {}
-main figure { display:flex;}
-main figure img { }
-
-h1 {
-  margin-bottom: 1em;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-article {
-    font-family:serif;
+main h2, main h3 {
+    text-align: center;
 }
 article img {
-     width: 100%;
+    width: 100%
+}
+.city-cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
 }
 
-.weather-summary {
+.city-cards > section {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
 }
 
-.forecast {
+.navbar {
+    font-family: 'Oxygen';
+    font-size: 18px;
+    background: linear-gradient(to bottom, rgba(135,185,232,1) 0%, rgba(32,124,229,1) 55%, rgba(32,124,229,1) 100%);  border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+#main-nav {
+    list-style-type: none;
     display: none;
+    flex-direction: column;
 }
-
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
+#main-nav li {
+    text-align: center;
+    margin: 15px auto;
 }
-form legend {
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 .5rem;
+.nav-links,
+    #logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
-
-form label.top, form div {
-    display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .8rem;
+#logo:hover,
+    .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
 }
-
-form label.top input, form label.top select {
-    -webkit-appearance:none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+#logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: 15px;
 }
-
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
+#navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
 }
-
-form input.submitBtn {
-    border: none;
-    background-color: #9c2c13;
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
+#navbar-toggle:hover {
+    color: rgba(255, 255, 255, 1);
 }
-
-form label.top input:required {
-    border-left: red solid 6px;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
-
-form label.top input:required:valid {
-    border-left: green solid 6px;
-}
-
-form textarea {
-    width: 100%;
-    height: 10em;
-    max-width: 40em;  
-    max-height: 15em;
- }
-
 footer {
   grid-column: span 3;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1em;
   background-color: #690;
   color: white;
 }
