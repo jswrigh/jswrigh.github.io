@@ -1,3 +1,16 @@
 @media (min-width: 1024px) {
 
+header {
+    height: 130px;
+    margin: 0 0 0 0;
+    background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('../images/bikeheader1280.jpg');
+    background-size: 100%;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
 }

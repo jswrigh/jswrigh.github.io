@@ -6,9 +6,11 @@
     <title>Mountain Spoke</title>
     <meta name="description" content="Mountain Spoke - Bozman's Home for Mountain Bikes">
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/toggle.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
 $(document).ready(function() {    
@@ -19,27 +21,22 @@ $(document).ready(function() {
 })
 </script>
 </head>
-   
 <body>
-    <picture>
-        <source srcset="images/bikeheader645.jpg" media="(max-width: 780px)">
-        <source srcset="images/bikeheader1024.jpg" media="(max-width: 1024px)">
-        <img src="images/bikeheader1280.jpg" alt="mountain bike">
-    </picture>
-
-  <nav class="site-nav">
-
-  <div class="menu-toggle">
+<header>
+    <h1>TEST HEADER</h1>
+</header>
+<nav class="site-nav">
+    <div class="menu-toggle">
     <div class="hamburger"></div>
-  </div>
-
-  <ul class="open desktop">
+    </div>
+    <ul class="open desktop">
     <li><a href="#!">Home</a></li>
     <li><a href="#!">Latest News</a></li>
     <li><a href="#!">About us</a></li>
     <li><a href="#!">Download Plugin</a></li>
     <li><a href="#!">Contact us</a></li>    
-  </ul>
+    </ul>
 </nav>
+<p>Test content</p>
 </body>
 </html>
