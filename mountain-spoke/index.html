@@ -17,6 +17,7 @@ $(document).ready(function() {
     $(".menu-toggle").click(function() {
         $('ul').toggleClass('opening');
         $(this).toggleClass('open');
+        $(".header-text").toggle();
     })
 })
 </script>
@@ -29,16 +30,16 @@ $(document).ready(function() {
     </div>
     <ul class="open desktop">
     <li><a href="#!">Home</a></li>
-    <li><a href="#!">Latest News</a></li>
-    <li><a href="#!">About us</a></li>
-    <li><a href="#!">Download Plugin</a></li>
-    <li><a href="#!">Contact us</a></li>    
+    <li><a href="#!">Events</a></li>
+    <li><a href="#!">Contact us</a></li>
+    <li><a href="#!">Tours</a></li>
+    <li><a href="#!">Sales</a></li>    
+    <li><a href="#!">Service</a></li>    
     </ul>
 </nav>
-
-    <h1>TEST HEADER</h1>
-        <h2>TEST HEADER</h2>
-
+<div class="header-text">
+    <h1>Bozeman Mountain Bikes</h1>
+</div>
 </header>
 <main>
     This is the main content
