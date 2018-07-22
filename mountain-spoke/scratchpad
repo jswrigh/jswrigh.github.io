@@ -32,3 +32,20 @@ header {
     background-size: 100%;
     background-clip: border-box;
     background-repeat: no-repeat;
+    
+        background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('../images/bikeheader1024.jpg');
+
+nav a {
+  color: #EBEBD3;
+  background: rgba(145, 188, 168,.80);
+  display: block;
+  padding: 1.5em 4em 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
