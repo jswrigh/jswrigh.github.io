@@ -41,17 +41,17 @@ nav {
 }
 
 nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
 
 nav ul.opening {
-  display: block;
-  height: 30px;
+    display: block;
+    height: 30px;
 }
 
 nav li { border-bottom: 1px solid #f6f4e2; }
@@ -59,20 +59,20 @@ nav li { border-bottom: 1px solid #f6f4e2; }
 nav li:last-child { border-bottom: none; }
 
 nav a {
-  color: white;
-  background: rgba(145, 188, 168,.80);
-  display: block;
-  padding: 1.5em 4em 1.5em 3em;
-  text-transform: uppercase;
-  text-decoration: none;
+    color: white;
+    background: rgba(145, 188, 168,.80);
+    display: block;
+    padding: 1.5em 4em 1.5em 3em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 nav a:hover, nav a:focus { background: #3d484b; }
 
 .site-nav--icon {
-  font-size: 1.4em;
-  margin-right: 1em;
-  width: 1.1em;
-  text-align: right;
-  color: rgba(255,255,255,.4);
+    font-size: 1.4em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255,255,255,.4);
 }
