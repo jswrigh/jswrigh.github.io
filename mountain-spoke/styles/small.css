@@ -28,6 +28,11 @@ header {
 
 .header-text {
     padding-top:10px;
+    font-size:.75em;
+}
+
+.header-toggle {
+    display:none;
 }
 
 nav {

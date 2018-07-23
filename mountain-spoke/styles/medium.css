@@ -4,11 +4,26 @@ header {
     height: 300px;
     margin: 0 0 0 0;
     background: 
-        url('../images/bikeheader1024.jpg');
-    background-size: 100%;
-    background-clip: border-box;
-    background-repeat: no-repeat;
+        url('../images/logo.svg'), url('../images/bikeheader645.jpg');
+    background-size: 15%, 100%;
+    background-clip: border-box, border-box;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, center;
 }
+
+.header-text {
+    padding-top:60px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    font-size:1.5em;
+}
+
+.header-toggle {
+    display:block;
+    margin-top:0px;
+    font-size:1em;
+}
+
 
 .menu-toggle { display: none; }
 
