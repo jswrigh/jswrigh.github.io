@@ -90,3 +90,25 @@ main > article {
   margin: 15px;
   text-align: left;
 }
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: DodgerBlue;
+}
+
+.footer-logo {
+    margin: 10px;
+    width:40px;
+}
+
+footer .contact-link {
+    margin: 10px;
+}
+
+footer .our-address {
+    margin: 10px;
+}

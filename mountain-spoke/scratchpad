@@ -66,3 +66,18 @@ nav a {
 </main>
 
 
+footer .contact-link {
+    width: 100%;
+    height: 50px;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    color: white;
+    background: 
+        url('../images/logo.svg');
+    background-size: 15%;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
