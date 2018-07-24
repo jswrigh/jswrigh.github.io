@@ -76,3 +76,18 @@ nav a:hover, nav a:focus { background: #3d484b; }
     text-align: right;
     color: rgba(255,255,255,.4);
 }
+
+main {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    background-color: DodgerBlue;
+    flex-wrap:wrap;
+}
+
+main > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  text-align: left;
+}
