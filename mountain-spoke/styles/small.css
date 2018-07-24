@@ -78,16 +78,15 @@ nav a:hover, nav a:focus { background: #3d484b; }
 }
 
 main {
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: space-around;
-    flex-wrap:wrap;
     background-color: DodgerBlue;
-    flex-wrap:wrap;
 }
 
-main > div {
+main > article {
   background-color: #f1f1f1;
-  width: 300px;
-  margin: 10px;
+  margin: 15px;
   text-align: left;
 }
