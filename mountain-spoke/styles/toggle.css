@@ -9,7 +9,7 @@
 .hamburger, .hamburger::before, .hamburger::after {
     content: '';
     display: block;
-    background: #EBEBD3;
+    background: #9b4447;
     height: 3px;
     width: 2em;
     border-radius: 3px;

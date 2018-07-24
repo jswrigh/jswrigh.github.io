@@ -71,8 +71,8 @@ main {
     background-image: 
         linear-gradient(
         rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.9)
-    ), url('../images/bikebackground900.jpg');
+        rgba(255, 255, 255, 0.9))
+        , url('../images/bikebackground900.jpg');
     background-size: 100%, cover;
     background-clip: border-box, border-box;
     background-repeat: no-repeat, no-repeat;
