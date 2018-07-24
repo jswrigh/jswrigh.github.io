@@ -100,6 +100,14 @@ main .button {
   border-left: 1px solid #CCCCCC;
 }
 
+.ride-list-grid {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: top;
+}
+
 footer {
     display:grid;
     grid-template-columns: 1fr 2fr 2fr;
