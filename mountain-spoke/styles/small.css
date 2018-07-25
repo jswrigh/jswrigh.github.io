@@ -110,7 +110,7 @@ main .button {
 
 footer {
     display:grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: auto;
     justify-content: space-around;
     align-items: center;
