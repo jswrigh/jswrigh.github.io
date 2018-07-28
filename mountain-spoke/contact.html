@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke</title>
+    <meta name="description" content="Mountain Spoke - Bozman's Home for Mountain Bikes">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/small-event.css">
+    <link rel="stylesheet" href="styles/toggle.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large-event.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="scripts/toggle.js"></script>
+</head>
+<body>
+<header>
+    <nav class="site-nav">
+    <div class="menu-toggle">
+    <div class="hamburger"></div>
+    </div>
+    <ul class="open desktop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="sales.html">Sales</a></li>    
+        <li><a href="service.html">Service</a></li>    
+    </ul>
+</nav>
+<div class="header-text">
+    <h1>Bozeman Mountain Bikes</h1>
+</div>
+<div class="header-toggle">
+    <h2>Contact Us</h2>
+</div>
+</header>
+<hr>
+<main>
+    <article>
+        <h2>Contact Us (if you want...no pressure)</h2>
+        <p>We're super proud of our web site and are 75% sure it answers every question anybody could ever have about Bozeman Mountain Bikes. On the other hand, we know you are probably in the top 25% of web surfers so we're giving you a chance to reach out to us. The best way to get the most personal service and real human contact is to call or come down to the store. Here's our info: You can call us at  or email us at </p>
+        <div class="ride-list-grid">
+            <ul class="ride-list">
+                <li>Address: 3950 Valley Commons Drive in Bozeman, Montanna.</li>
+                <li>Store Hours: 9:00am - 6:00pm Monday-Saturday</li>
+                <li>Phone: 406-555-4654</li>
+                <li>Email:info@bozemanbikes.xom</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277610956!2d-111.0929061845983!3d45.672272879104106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532751802351" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        If you have a specific question or comment and prefer to communicate via bytes, fill out this form and we'll get back to you by the end of the next business day.
+    </article>
+    <form method="get" action="thanks.html">
+        <h2>Contact Us</h2>
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone (if you want us to call you)<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Home State or Country <input type="text" name="home" pattern="[A-Za-z ]{2,}"></label>
+                <div>Question or Comment</div>
+                <textarea name="additionalInfo" placeholder="Provide extra information here..." rows="8"></textarea><br>
+                <input id="submitBtn" type="submit" value="Submit Registration">
+            </fieldset>
+    </form>
+</main>
+<footer>
+    <img class = "footer-logo" src="images/logo.svg" alt="Bozeman Mountain Bikes logo">
+    <div class = "contact-link">
+        <a href = "#!">Contact Us</a>
+    </div>
+    <div class = "our-address">
+    3950 Valley Commons Drive Bozeman, MT
+        <br><a href="https://goo.gl/maps/4NUDhDq4Y2H2">MAP</a>
+    </div>
+</footer>
+</body>
+</html>
