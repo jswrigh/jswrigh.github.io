@@ -23,50 +23,32 @@
 
 <script>
     function CreateTableFromJSON() {
-    $.getJSON('data/service-prices.json', function (data) {
-      console.log(data);
+        $.getJSON('data/service-prices.json', function (services) {
+            console.log(services);
 
-        var services = data;
- //       var test = services.map;
-
-// EXTRACT VALUE FOR HTML HEADER. 
-var col = [];
-var i = 0;
-var first_record = services[0];
-for (var k in first_record) {
-    col[i] = k;
-    i++;
-}
-for (var i in services) {
-  var test = services[i];
-for (var i in test) {
-  console.log("key : " + i + " - value : " + test[i]);
-}}
-/*        // EXTRACT VALUE FOR HTML HEADER. 
-        var col = [];
-        for (var i = 0; i < services.length; i++) {
-            for (var key in services) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
+            // EXTRACT VALUE FOR HTML HEADER. 
+            var col = [];
+            var i = 0;
+            var first_record = services[0];
+            for (var k in first_record) {
+                col[i] = k;
+                i++;
             }
-        }
-*/
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
+            // CREATE DYNAMIC TABLE.
+            var table = document.createElement("table");
 
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+            // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
-        var tr = table.insertRow(-1);                   // TABLE ROW.
+            var tr = table.insertRow(-1);                   // TABLE ROW.
 
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
+            for (var i = 0; i < col.length; i++) {
+                var th = document.createElement("th");      // TABLE HEADER.
+                th.innerHTML = col[i];
+                tr.appendChild(th);
+            }
 
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < services.length; i++) {
+            // ADD JSON DATA TO THE TABLE AS ROWS.
+            for (var i = 0; i < services.length; i++) {
 
             tr = table.insertRow(-1);
 
@@ -74,13 +56,13 @@ for (var i in test) {
                 var tabCell = tr.insertCell(-1);
                 tabCell.innerHTML = services[i][col[j]];
             }
-        }
+            }
 
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    })
-}
+            // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+            var divContainer = document.getElementById("showData");
+            divContainer.innerHTML = "";
+            divContainer.appendChild(table);
+        })
+    }
 </script>
 </html>
