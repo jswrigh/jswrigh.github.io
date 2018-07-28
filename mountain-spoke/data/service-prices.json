@@ -1,0 +1,18 @@
+[
+    {
+        "Name": "Adjustment",
+        "Description": "We set the seat and handlebars to match your body and riding style.",
+        "Price": "Free!",
+        "Time": "While you wait."
+    },{
+        "Name": "Tire Replacement",
+        "Description": "We repair (if we can) or replace a bald, ruined, or misbehaving tire (who are we to judge?).",
+        "Price": "$12.00 plus the cost of the replacement.",
+        "Time": "While you wait (about an hour if you want to go out and get a coffee. Bring us one if you do. We'll knock a dollar off the price)."
+    },{
+        "Name": "Overhaul",
+        "Description": "We inspect your bike from stem to stern, oiling, cleaning, polishing, and replacing anything necessary to put it in like-new condition.",
+        "Price": "Initial inspection is free. Overhaul costs $60 - $200, depending on what needs doing.",
+        "Time": "2 business days."
+    }
+]
